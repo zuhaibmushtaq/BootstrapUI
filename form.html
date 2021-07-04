@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<title>Form</title>
+</head>
+<body>
+
+	<div class="container">
+
+<form>
+
+	<h1>Credentials:</h1>
+
+	<div class="form-group was-validated">
+	
+	<div class="mb-5">
+
+		<label for="email_address" class="form-label">
+			Email address:
+		</label>
+
+		<input type="email" name="nm" class="form-control" id="email_address" placeholder="something@something.com" required>
+
+		<div class="form-text">This email will not be shared</div>
+
+		
+	</div>
+
+	<div class="mb-5">
+		
+		<label for="password_input" class="form-label">
+			Password:
+		</label>
+
+		<input type="Password" name="pass" id = "password_input" class="form-control" required>
+		
+	</div>
+
+	<div class="mb-5">
+		<input type="checkbox" name="chkbx" class="form-check-input" id="rmmbrcheck">
+		<label for="rmmbrcheck" class="form-check-label">Remember me</label>
+		<script type="text/javascript">
+	if(!this.form.checkbox.checked)
+	{
+		<div class="alert alert-warning">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Alert!</strong> Please Check the Checkbox
+		</div>
+	}
+</script>
+	</div>
+
+
+<!--Front-End Validation-->
+		<div class="valid-feedback">Valid</div>
+		<div class="invalid-feedback">Invalid</div>
+<!--Front-End Validation-->
+
+
+</div>
+	<button type="Submit" class="btn btn-primary">Authorize</button>
+	
+
+
+</form>
+		
+	</div><!--Container div closed here-->
+
+</body>
+</html>
